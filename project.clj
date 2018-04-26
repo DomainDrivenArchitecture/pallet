@@ -10,7 +10,7 @@ unprecedented level of customization."
   :url "http://palletops.com"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :scm {:url "git@github.com:pallet/pallet.git"}
+  :scm {:url "git@github.com:jankrebs/pallet.git"}
 
   :dependencies [[org.clojure/core.incubator "0.1.4"]
                  [org.clojure/tools.logging "0.4.0"]
