@@ -1,5 +1,5 @@
 {:dev {:dependencies [[ch.qos.logback/logback-classic "1.2.3"]
-                      [org.clojure/clojure "1.7.0"]]
+                      [org.clojure/clojure "1.8.0"]]
        ;; We would like to create aliases in the dev profile, but this
        ;; causes a stack overflow in lein 2.0.0
        ;; https://github.com/technomancy/leiningen/pull/993
@@ -13,7 +13,7 @@
                  [lein-marginalia "0.9.1"]
                  [lein-pallet-release "RELEASE"]],}
  :repl {:dependencies [[org.clojure/clojure "1.7.0"]]}
- :provided {:dependencies [[org.clojure/clojure "1.7.0"]]}
+ :provided {:dependencies [[org.clojure/clojure "1.8.0"]]}
  :doc {:dependencies [[com.palletops/pallet-codox "0.1.0"]]
        :codox {:writer codox-md.writer/write-docs
                :output-dir "autodoc/api/0.8"
@@ -24,6 +24,7 @@
                  "doc" ["do" "codox," "marg"]}}
  :no-checkouts {:checkout-deps-shares ^:replace []} ; disable checkouts
  :clojure-1.5.0 {:dependencies [[org.clojure/clojure "1.5.0"]]}
+ :clojure-1.8.0 {:dependencies [[org.clojure/clojure "1.8.0"]]}
  :jclouds {:repositories
            {"sonatype"
             "https://oss.sonatype.org/content/repositories/releases/"}
