@@ -12,7 +12,7 @@
        :plugins [[lein-codox "0.10.3"]
                  [lein-marginalia "0.9.1"]
                  [lein-pallet-release "RELEASE"]],}
- :repl {:dependencies [[org.clojure/clojure "1.7.0"]]}
+ :repl {:dependencies [[org.clojure/clojure "1.8.0"]]}
  :provided {:dependencies [[org.clojure/clojure "1.8.0"]]}
  :doc {:dependencies [[com.palletops/pallet-codox "0.1.0"]]
        :codox {:writer codox-md.writer/write-docs
