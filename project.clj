@@ -31,9 +31,9 @@ unprecedented level of customization."
                  [pallet-fsmop "0.3.1"
                   :exclusions [org.clojure/tools.logging]]
                  [pallet-map-merge "0.1.1"]
-                 [org.clojars.runa/clj-schema "1.0.0"]
+                 [org.clojars.runa/clj-schema "0.9.4"]
                  [prismatic/schema "1.1.9"]
-                 [org.flatland/useful "0.11.5"]
+                 [org.flatland/useful "0.10.7"]
                  [commons-codec "1.11"]]
   :classifiers {:tests {:source-paths ^:replace ["test"]
                         :resource-paths ^:replace []}}
