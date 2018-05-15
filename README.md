@@ -1,3 +1,8 @@
+With great respect to Hugo Duncan forked from: https://github.com/pallet/pallet
+
+[![Clojars Project](https://img.shields.io/clojars/v/dda/pallet.svg)](https://clojars.org/dda/pallet)
+[![Build Status](https://travis-ci.org/DomainDrivenArchitecture/pallet.svg?branch=master)](https://travis-ci.org/DomainDrivenArchitecture/pallet)
+
 This is the unstable development branch. See the
 [stable branch](https://github.com/pallet/pallet/tree/support/0.7.x) for
 production code.
