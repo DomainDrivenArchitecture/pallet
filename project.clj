@@ -24,7 +24,7 @@ unprecedented level of customization."
                   :exclusions [com.palletops/pallet]]
                  ;do NOT upgrade script-exec to version 0.5.0 as it is older!
                  [com.palletops/script-exec "0.4.2"]
-                 [com.palletops/stevedore "0.8.0-beta.7"]
+                 [dda/stevedore "0.8.1-SNAPSHOT"]
                  [clj-ssh "0.5.14"]
                  [enlive "1.1.6"
                   :exclusions [org.clojure/clojure]]
