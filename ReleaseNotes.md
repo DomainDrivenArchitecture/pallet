@@ -1,3 +1,15 @@
+## 0.9.0
+
+- adjust projectname
+
+- add build & artifact status
+
+- adjust gitignor to atom env.
+
+- use clojure 1.9
+
+- updated dependencies
+
 ## 0.8.12
 
 - Update to script-exec 0.4.2

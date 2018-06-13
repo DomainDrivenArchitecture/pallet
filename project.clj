@@ -1,4 +1,4 @@
-(defproject dda/pallet "0.8.13-SNAPSHOT"
+(defproject dda/pallet "0.9.0-SNAPSHOT"
   :description
   "DevOps for the JVM.
 
@@ -19,12 +19,12 @@ unprecedented level of customization."
                  [org.clojure/algo.monads "0.1.6"]
                  [com.palletops/chiba "0.2.1"]
                  [com.palletops/thread-expr "1.3.0"]
-                 [dda/pallet-common "0.4.1-SNAPSHOT" :exclusions [org.clojure/tools.logging]]
+                 [dda/pallet-common "0.5.0" :exclusions [org.clojure/tools.logging]]
                  [com.palletops/pallet-repl "0.8.0-beta.2"
                   :exclusions [com.palletops/pallet]]
                  ;do NOT upgrade script-exec to version 0.5.0 as it is older!
                  [com.palletops/script-exec "0.4.2" :exclusions [com.palletops/pallet-common]]
-                 [dda/stevedore "0.8.1-SNAPSHOT" :exclusions [org.clojure/tools.logging]]
+                 [dda/stevedore "0.9.0-beta.1" :exclusions [org.clojure/tools.logging]]
                  [clj-ssh "0.5.14"]
                  [enlive "1.1.6"
                   :exclusions [org.clojure/clojure]]
@@ -39,4 +39,6 @@ unprecedented level of customization."
                         :resource-paths ^:replace []}}
   :test-selectors {:default
                    ;; travis sudo is configured with !env_reset
-                   (complement :require-no-ssh-env)})
+                   (complement :require-no-ssh-env)}
+  :deploy-repositories [["snapshots" :clojars]
+                        ["releases" :clojars]])
