@@ -1,6 +1,6 @@
 (ns pallet.script.lib
   "Script library for abstracting target host script differences"
-  (:refer-clojure :exclude [alias source])
+  (:refer-clojure :exclude [alias source cat])
   (:require
    [clojure.string :as string]
    [pallet.script :as script]

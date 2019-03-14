@@ -1,5 +1,5 @@
 (ns pallet.script.lib-test
-  (:refer-clojure :exclude [alias source])
+  (:refer-clojure :exclude [alias source cat])
   (:require
    [clojure.test :refer :all]
    [pallet.script :as script]

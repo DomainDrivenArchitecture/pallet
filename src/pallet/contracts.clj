@@ -1,5 +1,6 @@
 (ns pallet.contracts
   "Contracts that can be enforced in pallet code."
+  (:refer-clojure :exclude [bytes?])
   (:require
    [clj-schema.schema
     :refer [constraints

@@ -1,4 +1,5 @@
 (ns pallet.contracts-test
+  (:refer-clojure :exclude [bytes?])
   (:require
    [clj-schema.schema :refer [map-schema]]
    [clojure.test :refer :all]

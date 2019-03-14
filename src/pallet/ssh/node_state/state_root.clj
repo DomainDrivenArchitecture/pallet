@@ -1,6 +1,7 @@
 (ns pallet.ssh.node-state.state-root
   "A node-state implementation that maintains node state in a parallel directory
   tree."
+  (:refer-clojure :exclude [cat])
   (:require
    [pallet.actions.direct.file :as file]
    [pallet.core.session :refer [admin-user]]
