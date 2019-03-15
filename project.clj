@@ -13,11 +13,13 @@ unprecedented level of customization."
   :scm {:url "git@github.com:DomainDrivenArchitecture/pallet.git"}
 
   :dependencies [[org.clojure/core.incubator "0.1.4"]
-                 [org.clojure/tools.logging "0.4.0"]
+                 [org.clojure/tools.logging "0.5.0-alpha"]
                  [org.clojure/tools.macro "0.1.5"]
-                 [org.clojure/tools.cli "0.3.7"]
+                 [org.clojure/tools.cli "0.4.1"]
                  [org.clojure/algo.monads "0.1.6"]
                  [com.palletops/chiba "0.2.1"]
+                 ; TODO: dda/chiba is not working jet on jdk10
+                 ;[dda/chiba "0.2.3-SNAPSHOT"]
                  [com.palletops/thread-expr "1.3.0"]
                  [dda/pallet-common "0.5.0" :exclusions [org.clojure/tools.logging]]
                  [com.palletops/pallet-repl "0.8.0-beta.2"
@@ -32,9 +34,11 @@ unprecedented level of customization."
                   :exclusions [org.clojure/tools.logging]]
                  [pallet-map-merge "0.1.1"]
                  [org.clojars.runa/clj-schema "0.9.4"]
-                 [prismatic/schema "1.1.9"]
-                 [org.flatland/useful "0.10.7"]
-                 [commons-codec "1.11"]]
+                 ;TODO: org.clojars.runa/clj-schema "1.0.0" is no longer compatible with clojure1.10
+                 ;[dda/clj-schema "1.0.1-SNAPSHOT"]
+                 [prismatic/schema "1.1.10"]
+                 [org.flatland/useful "0.11.6"]
+                 [commons-codec "1.12"]]
   :classifiers {:tests {:source-paths ^:replace ["test"]
                         :resource-paths ^:replace []}}
   :test-selectors {:default
