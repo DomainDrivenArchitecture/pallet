@@ -43,5 +43,5 @@ unprecedented level of customization."
                    (complement :require-no-ssh-env)}
   :deploy-repositories [["snapshots" :clojars]
                         ["releases" :clojars]]
-  :aliases {"test-all" ["with-profile" "-user,+1.10:-user,+1.9:-user,+1.8:-user,+1.7" "test"]
+  :aliases {"test-all" ["with-profile" "-user,+1.10:-user,+1.9:-user,+1.8" "test"]
             "test-latest" ["with-profile" "-user,+1.10" "test"]})
