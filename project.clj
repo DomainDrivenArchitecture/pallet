@@ -17,9 +17,7 @@ unprecedented level of customization."
                  [org.clojure/tools.macro "0.1.5"]
                  [org.clojure/tools.cli "0.4.1"]
                  [org.clojure/algo.monads "0.1.6"]
-                 [com.palletops/chiba "0.2.1"]
-                 ; TODO: dda/chiba is not working jet on jdk10
-                 ;[dda/chiba "0.2.3-SNAPSHOT"]
+                 [dda/chiba "0.2.3-SNAPSHOT"]
                  [com.palletops/thread-expr "1.3.0"]
                  [dda/pallet-common "0.5.0" :exclusions [org.clojure/tools.logging]]
                  [com.palletops/pallet-repl "0.8.0-beta.2"
@@ -45,4 +43,6 @@ unprecedented level of customization."
                    ;; travis sudo is configured with !env_reset
                    (complement :require-no-ssh-env)}
   :deploy-repositories [["snapshots" :clojars]
-                        ["releases" :clojars]])
+                        ["releases" :clojars]]
+  :aliases {"test-all" ["with-profile" "-user,+1.10:-user,+1.9:-user,+1.8:-user,+1.7" "test"]
+            "test-latest" ["with-profile" "-user,+1.10" "test"]})

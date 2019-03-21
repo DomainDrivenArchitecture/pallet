@@ -23,7 +23,6 @@
                  "codox" ["doc"]
                  "doc" ["do" "codox," "marg"]}}
  :no-checkouts {:checkout-deps-shares ^:replace []} ; disable checkouts
- :1.5 {:dependencies [[org.clojure/clojure "1.5.0"]]}
  :1.7 {:dependencies [[org.clojure/clojure "1.7.0"]]}
  :1.8 {:dependencies [[org.clojure/clojure "1.8.0"]]}
  :1.9 {:dependencies [[org.clojure/clojure "1.9.0"]]}
