@@ -16,7 +16,8 @@ unprecedented level of customization."
                  [org.clojure/tools.macro "0.1.5"]
                  [org.clojure/tools.cli "0.4.1"]
                  [org.clojure/algo.monads "0.1.6"]
-                 [dda/chiba "0.2.3-SNAPSHOT"]
+                 [dda/chiba "0.2.3-SNAPSHOT" :exclusions [razum2um/bultitude]]
+                 [razum2um/bultitude "0.3.1"]
                  [com.palletops/thread-expr "1.3.0"]
                  [dda/pallet-common "0.5.0" :exclusions [org.clojure/tools.logging]]
                  [com.palletops/pallet-repl "0.8.0-beta.2"
