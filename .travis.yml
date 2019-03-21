@@ -1,5 +1,13 @@
 language: clojure
+cache:
+  directories:
+  - $HOME/.m2
 sudo: required
+script: lein test-all
 before_script:
 - ssh-keygen -N "" -f ~/.ssh/id_rsa
 - cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+jdk:
+  - openjdk8
+  - openjdk11
+  - openjdk-ea
