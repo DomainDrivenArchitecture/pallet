@@ -9,7 +9,6 @@
    ~/.pallet/services/*.clj"
   (:require
    [chiba.plugin :refer [data-plugins]]
-   [clojure.core.incubator :refer [-?>]]
    [clojure.java.io :as java-io]
    [clojure.java.io :refer [resource]]
    [clojure.string :as string]

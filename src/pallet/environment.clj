@@ -19,7 +19,6 @@
    The merging of values between scopes is key specific, and is determined by
    `merge-key-algorithm`."
   (:require
-   [clojure.core.incubator :refer [-?>]]
    [clojure.walk :as walk]
    [pallet.core.file-upload :as file-upload]
    [pallet.ssh.node-state :as node-state]
@@ -201,5 +200,5 @@
    (maybe-update-in (select-keys environment node-keys)
                     [:phases] phases-with-meta {})
    group
-   (maybe-update-in (-?> environment :groups group)
+   (maybe-update-in (some-> environment :groups group)
                     [:phases] phases-with-meta {})))

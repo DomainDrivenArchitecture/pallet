@@ -12,8 +12,7 @@ unprecedented level of customization."
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :scm {:url "git@github.com:DomainDrivenArchitecture/pallet.git"}
 
-  :dependencies [[org.clojure/core.incubator "0.1.4"]
-                 [org.clojure/tools.logging "0.5.0-alpha"]
+  :dependencies [[org.clojure/tools.logging "0.5.0-alpha"]
                  [org.clojure/tools.macro "0.1.5"]
                  [org.clojure/tools.cli "0.4.1"]
                  [org.clojure/algo.monads "0.1.6"]
