@@ -1,4 +1,4 @@
-(defproject dda/pallet "0.9.1"
+(defproject dda/pallet "0.9.2-SNAPSHOT"
   :description
   "DevOps for the JVM.
 
